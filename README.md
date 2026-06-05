@@ -3,8 +3,8 @@
 A full-stack web application that allows teams to manage tasks collaboratively. Built with React, Node.js, Express, and PostgreSQL.
 
 ## 🌐 Live Demo
-- **Frontend:** [your-deployed-url]
-- **Backend API:** [your-api-url]
+- **Frontend:** 
+- **Backend API:** 
 
 ## 📁 Project Structure
 
