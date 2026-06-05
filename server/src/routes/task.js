@@ -23,4 +23,8 @@ router.get('/members/:teamId', isAuthenticated, async (req, res) => {
     }
 });
 
+const { getTasks, createTask, updateTask, deleteTask, getTeamMembers } = require('../controllers/taskController');
+
+router.get('/members/:teamId', isAuthenticated, getTeamMembers);
+
 module.exports = router;
