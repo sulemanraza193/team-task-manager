@@ -175,5 +175,5 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 - `feature/tasks` — tasks feature
 
 ## 👨‍💻 Author
-- **Your Name**
+- **Suleman Raza**
 - GitHub: [@yourusername](https://github.com/sulemanraza193)
