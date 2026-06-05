@@ -176,4 +176,4 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 👨‍💻 Author
 - **Suleman Raza**
-- GitHub: [@yourusername](https://github.com/sulemanraza193)
+- GitHub: [@sulemanraza193](https://github.com/sulemanraza193)
