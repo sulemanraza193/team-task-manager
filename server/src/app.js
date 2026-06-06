@@ -4,17 +4,16 @@ const session = require('express-session');
 const passport = require('./config/passport');
 const sessionConfig = require('./config/session');
 // Wrong - looking for wrong path
-const errorHandler = require('./middleware/errorHandler');
+const errorHandler = require('./middlerware/errorhandler');
 
 const authRoutes = require('./routes/auth');
-const teamRoutes = require('./routes/team');
-const taskRoutes = require('./routes/task');
+const teamRoutes = require('./routes/teams');
+const taskRoutes = require('./routes/tasks');
 
 const app = express();
 
-// CORS must be first
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: process.env.CLIENT_URL,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
