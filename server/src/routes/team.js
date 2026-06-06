@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { getTeams, createTeam, addMember, deleteTeam } = require('../controllers/teamController');
-const { isAuthenticated } = require('../middlerware/auth');
+const { isAuthenticated } = require('../middleware/auth');
 
 router.get('/', isAuthenticated, getTeams);
 router.post('/', isAuthenticated, createTeam);
