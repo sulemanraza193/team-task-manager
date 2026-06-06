@@ -1,13 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
-const passport = require('./src/config/passport.js');
+const passport = require('./src/config/passport'); // Adjust the path as needed
 const sessionConfig = require('./src/config/session');
-const errorHandler = require('./src/middleware/errorHandler');
+// Wrong - looking for wrong path
+const errorHandler = require('./src/middleware/errorHandler'); // Adjust the path as needed
 
 const authRoutes = require('./src/routes/auth');
 const teamRoutes = require('./src/routes/teams');
 const taskRoutes = require('./src/routes/tasks');
+
 
 const app = express();
 
