@@ -10,3 +10,7 @@ COPY . .
 EXPOSE 8080
 
 CMD ["npm", "start"]
+# ... your other dockerfile setups (FROM, WORKDIR, COPY, RUN) ...
+
+# Change this line to point to the new path inside src/
+CMD ["node", "src/index.js"]
