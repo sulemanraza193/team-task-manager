@@ -3,8 +3,7 @@ const cors = require('cors');
 const session = require('express-session');
 const passport = require('./config/passport');
 const sessionConfig = require('./config/session');
-// Wrong - looking for wrong path
-const errorHandler = require('./middlerware/errorhandler');
+const errorHandler = require('./middleware/errorHandler');
 
 const authRoutes = require('./routes/auth');
 const teamRoutes = require('./routes/teams');
