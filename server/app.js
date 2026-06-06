@@ -1,13 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
-const passport = require('./config/passport.js');
-const sessionConfig = require('./config/session');
-const errorHandler = require('./middleware/errorHandler');
+const passport = require('./src/config/passport.js');
+const sessionConfig = require('./src/config/session');
+const errorHandler = require('./src/middleware/errorHandler');
 
-const authRoutes = require('./routes/auth');
-const teamRoutes = require('./routes/teams');
-const taskRoutes = require('./routes/tasks');
+const authRoutes = require('./src/routes/auth');
+const teamRoutes = require('./src/routes/teams');
+const taskRoutes = require('./src/routes/tasks');
 
 const app = express();
 
