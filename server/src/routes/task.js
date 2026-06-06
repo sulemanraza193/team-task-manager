@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { getTasks, createTask, updateTask, deleteTask } = require('../controllers/taskController');
-const { isAuthenticated } = require('../middleware/auth');
 
+// Combined all controller imports into one clean block
 const {
     getTasks,
     createTask,
@@ -11,7 +10,8 @@ const {
     getTeamMembers
 } = require('../controllers/taskController');
 
-const { isAuthenticated } = require('../middlerware/auth');
+// Corrected the single import for authentication middleware
+const { isAuthenticated } = require('../middleware/auth');
 
 // TASK ROUTES
 router.get('/', isAuthenticated, getTasks);
@@ -19,7 +19,7 @@ router.post('/', isAuthenticated, createTask);
 router.put('/:id', isAuthenticated, updateTask);
 router.delete('/:id', isAuthenticated, deleteTask);
 
-// TEAM MEMBERS ROUTE (controller version - CLEAN)
+// TEAM MEMBERS ROUTE
 router.get('/members/:teamId', isAuthenticated, getTeamMembers);
 
 module.exports = router;
