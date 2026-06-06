@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
-const passport = require('./config/passport');
+const passport = require('./config/passport.js');
 const sessionConfig = require('./config/session');
 const errorHandler = require('./middleware/errorHandler');
 
