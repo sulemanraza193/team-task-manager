@@ -13,10 +13,10 @@ const taskRoutes = require('./src/routes/task');
 const app = express();
 
 app.use(cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type'],
+  origin: 'https://team-task-manager-k6ii.vercel.app',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
 }));
 
 app.use(express.json());
