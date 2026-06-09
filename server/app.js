@@ -12,13 +12,13 @@ const taskRoutes = require('./src/routes/task');
 
 const app = express();
 
-app.set('trust proxy', 1); // ← add this for Railway
 const allowedOrigins = [
-  'https://team-task-manager-k6ii.vercel.app'
+  'https://team-task-manager-k6ii.vercel.app',
+  'https://team-task-manager-k6ii-git-main-sulemanraza193s-projects.vercel.app',
 ];
 
 app.use(cors({
-  origin: function (origin, callback) {
+  origin: function(origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -26,8 +26,8 @@ app.use(cors({
     }
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
 }));
 
 app.use(express.json());
