@@ -7,8 +7,8 @@ const sessionConfig = require('./src/config/session');
 const errorHandler = require('./src/middleware/errorHandler'); // Adjust the path as needed
 
 const authRoutes = require('./src/routes/auth');
-const teamRoutes = require('./src/routes/teams');
-const taskRoutes = require('./src/routes/tasks');
+const teamRoutes = require('./src/routes/team');
+const taskRoutes = require('./src/routes/task');
 
 const app = express();
 
